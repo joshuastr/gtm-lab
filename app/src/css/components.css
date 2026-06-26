@@ -19,6 +19,7 @@
 
 /* ===================== Advisor ===================== */
 .advisor-q { font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; margin-bottom: 14px; }
+.advisor-q-sub { font-size: 0.98rem; margin-top: 18px; }
 .advisor-options { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
 .opt-btn {
     display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-width: 180px;
@@ -43,7 +44,11 @@
 .rec-why { color: var(--ink-2); font-size: 0.92rem; margin: 14px 0 4px; }
 .caveat { color: var(--descriptive); background: var(--descriptive-light); font-size: 0.87rem; padding: 8px 12px; border-radius: var(--radius-sm); margin-top: 8px; }
 .refine { color: var(--ink-2); font-size: 0.88rem; padding: 4px 0; }
+.rec-see { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin-top: 12px; }
 .rec-source { font-size: 0.8rem; color: var(--ink-4); margin-top: 14px; font-style: italic; }
+.rec-cross { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--border); }
+.rec-cross-title { font-family: var(--font-heading); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-4); margin-bottom: 8px; }
+.rec-cross-item { color: var(--ink-3); font-size: 0.85rem; line-height: 1.55; margin-bottom: 6px; }
 
 /* ===================== Data tables (Glossary / Benchmarks / Tools) ===================== */
 .data-group { margin-bottom: 28px; }

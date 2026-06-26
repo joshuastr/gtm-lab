@@ -66,24 +66,48 @@ function parseBenchmarks(md) {
 // Format: `## Band: name  (ACV ...)`; then `- key: value` (key ∈ motion/channels/avoid/why/source/caveat/refine).
 // `channels` and `refine` may repeat or be comma-lists → arrays.
 function parseAdvisor(md) {
-    const bands = [];
+    const out = { archetype: { question: '', options: [] }, acvQuestion: '', bands: [], cross: [] };
     let cur = null;
-    const push = () => { if (cur) bands.push(cur); };
+    let mode = '';
+    const push = () => { if (cur) out.bands.push(cur); cur = null; };
     for (const raw of md.split('\n')) {
         const line = raw.trim();
-        const band = line.match(/^##\s+Band:\s*([^()]+?)\s*\(ACV\s*([^)]+)\)/i);
-        if (band) { push(); cur = { id: band[1].trim().toLowerCase().replace(/\s+/g, '-'), label: band[1].trim(), acv: band[2].trim(), motion: '', channels: [], avoid: '', why: '', source: '', caveats: [], refine: [] }; continue; }
-        if (!cur) continue;
-        const kv = line.match(/^-\s+(motion|channels|avoid|why|source|caveat|refine):\s*(.*)$/);
-        if (!kv) continue;
-        const [, key, val] = kv;
-        if (key === 'channels') cur.channels = val.split(',').map(s => s.trim()).filter(Boolean);
-        else if (key === 'caveat') cur.caveats.push(val.trim());
-        else if (key === 'refine') cur.refine.push(val.trim());
-        else cur[key] = val.trim();
+        const arche = line.match(/^##\s+Archetype:\s*(.+)/i);
+        if (arche) { push(); mode = 'archetype'; out.archetype.question = arche[1].trim(); continue; }
+        const acvq = line.match(/^##\s+ACV question:\s*(.+)/i);
+        if (acvq) { push(); mode = 'acv'; out.acvQuestion = acvq[1].trim(); continue; }
+        if (/^##\s+Cross-band/i.test(line)) { push(); mode = 'cross'; continue; }
+        const band = line.match(/^##\s+Band:\s*(.+)/i);
+        if (band) {
+            push();
+            const [track, label, acv] = band[1].split('|').map((s) => s.trim());
+            cur = { track: track || '', label: label || '', acv: acv || '', motion: '', channels: [], avoid: '', why: '', source: '', caveats: [], refine: [], see: '' };
+            mode = 'band';
+            continue;
+        }
+        if (line.startsWith('## ')) { push(); mode = ''; continue; }
+        if (mode === 'archetype') {
+            const o = line.match(/^-\s+option:\s*(.+)/i);
+            if (o) { const p = o[1].split('|').map((s) => s.trim()); out.archetype.options.push({ label: p[0] || '', track: p[1] || '', sub: p[2] || '' }); }
+            continue;
+        }
+        if (mode === 'cross') {
+            const c = line.match(/^-\s+(.+)/);
+            if (c) out.cross.push(c[1].trim());
+            continue;
+        }
+        if (mode === 'band' && cur) {
+            const kv = line.match(/^-\s+(motion|channels|avoid|why|source|caveat|refine|see):\s*(.*)$/);
+            if (!kv) continue;
+            const [, key, val] = kv;
+            if (key === 'channels') cur.channels = val.split(',').map((s) => s.trim()).filter(Boolean);
+            else if (key === 'caveat') cur.caveats.push(val.trim());
+            else if (key === 'refine') cur.refine.push(val.trim());
+            else cur[key] = val.trim();
+        }
     }
     push();
-    return { question: 'What is your annual contract value (ACV)?', bands };
+    return out;
 }
 
 // ---- tools.md → tools.json -------------------------------------------------------

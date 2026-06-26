@@ -11,7 +11,7 @@ const loadJSON = (name) => fetch(`${BASE}data/${name}`).then((r) => r.json());
 
 const tabContexts = {
     start: { title: 'Start Here', desc: 'The go-to-market motion from zero, in order. Each step: what it is, why it matters, and your first move.' },
-    advisor: { title: 'GTM Advisor', desc: 'Answer a couple of questions and get a recommendation for your go-to-market motion and first channels, with its source.' },
+    advisor: { title: 'GTM Advisor', desc: 'Tell us your business type (and, for software, your ACV) and get a grounded recommendation for your motion and first channels, with its source.' },
     plays: { title: 'GTM Plays', desc: 'Practical best-practice guides distilled from the research: when to use each play, the steps, and the source.' },
     knowledge: { title: 'GTM Glossary', desc: 'The language of modern go-to-market. Search the full glossary; each term has a plain definition and a source.' },
     benchmarks: { title: 'GTM Benchmarks', desc: 'Useful GTM benchmarks with their source and the context that matters. Filter by topic.' },
