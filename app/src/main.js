@@ -4,6 +4,7 @@ import { initKnowledge } from './knowledge.js';
 import { initBenchmarks } from './benchmarks.js';
 import { initTools } from './tools.js';
 import { initPlays } from './plays.js';
+import { initResources } from './resources.js';
 
 const BASE = import.meta.env.BASE_URL;
 const loadJSON = (name) => fetch(`${BASE}data/${name}`).then((r) => r.json());
@@ -15,6 +16,7 @@ const tabContexts = {
     knowledge: { title: 'GTM Glossary', desc: 'The language of modern go-to-market. Search the full glossary; each term has a plain definition and a source.' },
     benchmarks: { title: 'GTM Benchmarks', desc: 'Useful GTM benchmarks with their source and the context that matters. Filter by topic.' },
     tools: { title: 'GTM Tools', desc: 'The modern go-to-market stack by category: what each tool does, what it is best for, and what to watch out for.' },
+    resources: { title: 'Learning Resources', desc: 'A curated starting library: the people, publications, and primary sources to learn GTM and GTM engineering.' },
 };
 
 function initTabs() {
@@ -49,13 +51,14 @@ function initTabs() {
 document.addEventListener('DOMContentLoaded', async () => {
     initTabs();
     try {
-        const [start, advisor, glossary, benchmarks, tools, plays] = await Promise.all([
+        const [start, advisor, glossary, benchmarks, tools, plays, resources] = await Promise.all([
             loadJSON('start.json'),
             loadJSON('advisor.json'),
             loadJSON('glossary.json'),
             loadJSON('benchmarks.json'),
             loadJSON('tools.json'),
             loadJSON('plays.json'),
+            loadJSON('resources.json'),
         ]);
         initStart(start);
         initAdvisor(advisor);
@@ -63,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initBenchmarks(benchmarks);
         initTools(tools);
         initPlays(plays);
+        initResources(resources);
     } catch (err) {
         console.error('Failed to load data. Run `npm run build:data`.', err);
     }

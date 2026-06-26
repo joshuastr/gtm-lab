@@ -75,8 +75,8 @@ descriptive/contested, not a law. Add terms as they come up; cite when you do.
   *(Legal specifics flagged for verification, confirm before relying.)*
 
 ## Data & enrichment
-- **Enrichment**: adding attributes (firmographics, contacts) to records. **Waterfall enrichment**: trying
-  multiple data providers in sequence to maximize hit rate.
+- **Enrichment**: adding attributes to a bare record (a company's size and industry, a person's email, title, and LinkedIn) so you can actually target it.
+- **Waterfall enrichment**: trying several data providers in sequence, a waterfall, so each one fills the gaps the previous missed. It raises your hit rate versus relying on a single source, and it is the core of how a tool like Clay builds complete records.
 - **Dedup / data hygiene**: removing duplicates and stale/bad records; the trust surface of a data product.
 - **Public-record data**: data from mandated public filings; a first-class signal source. *(Cannonball.)*
 
@@ -102,9 +102,10 @@ descriptive/contested, not a law. Add terms as they come up; cite when you do.
 - **Clay**: orchestration + waterfall enrichment + CRM plumbing. **Claygent / Navigator**: Clay's AI agent;
   Navigator can scrape non-API/public-record web UIs (SEC/FINRA). *(Clay, vendor.)*
 - **Claude Code**: agent in your terminal; the "GTM OS" in the practitioner playbooks.
-- **Skill**: a codified SOP for an agent (a prompt + front matter, loaded on demand). **Sub-agent**: context
-  offload (delegate a task to a fresh window). **MCP**: a tool interface for an agent (floods context).
-  **CLI**: a code-based tool interface (loads only when used; preferred over MCP).
+- **Skill**: a codified standard operating procedure for an agent (a prompt plus front matter), loaded on demand only when it is needed.
+- **Sub-agent**: offloading a task to a fresh context window so the main agent only sees the result. It is a way to manage context, not to role-play a persona.
+- **MCP (Model Context Protocol)**: a standard tool interface that lets an agent use an app, but its tool definitions stay in context the whole time, which can crowd the model.
+- **CLI**: a code-based tool interface the agent calls, loaded only when used, so it is leaner than MCP for many tasks.
 - **Context engineering**: structuring/compacting the right info so the model performs; "context is the edge."
 - **Karpathy loop**: pick one metric + a ground truth; spawn challengers that must beat it to win; self-improving.
 - **GTM orchestrator / agent**: a chain of skills (AI + tools + a feedback loop) that runs a GTM play end-to-end.

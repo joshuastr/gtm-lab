@@ -84,6 +84,9 @@
 .tools-table th:nth-child(2), .tools-table td:nth-child(2) { width: 33%; }
 .tools-table th:nth-child(3), .tools-table td:nth-child(3) { width: 28%; }
 .kb-table td:first-child { width: 24%; }
+.res-table td:first-child { width: 25%; }
+.res-name { font-family: var(--font-heading); font-weight: 600; }
+a.res-name { color: var(--accent); }
 
 /* ===================== Plays ===================== */
 .plays-list { display: flex; flex-direction: column; gap: 18px; max-width: 880px; }

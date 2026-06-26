@@ -149,12 +149,34 @@ function parseStartHere(md) {
     return out;
 }
 
+// ---- resources.md → resources.json -----------------------------------------------
+// Format: `## Category`; `### Name`; then `- what:` and `- url:` lines.
+function parseResources(md) {
+    const out = [];
+    let category = '';
+    let cur = null;
+    const push = () => { if (cur && cur.name) out.push(cur); };
+    for (const raw of md.split('\n')) {
+        const line = raw.trim();
+        const cat = line.match(/^##\s+(.+)/);
+        if (cat) { category = cat[1].trim(); continue; }
+        const h3 = line.match(/^###\s+(.+)/);
+        if (h3) { push(); cur = { name: h3[1].trim(), category, what: '', url: '' }; continue; }
+        if (!cur) continue;
+        const kv = line.match(/^-\s+(what|url):\s*(.*)$/);
+        if (kv) cur[kv[1]] = kv[2].trim();
+    }
+    push();
+    return out;
+}
+
 const start = parseStartHere(read('starthere.md'));
 const glossary = parseGlossary(read('glossary.md'));
 const benchmarks = parseBenchmarks(read('benchmarks.md'));
 const advisor = parseAdvisor(read('advisor.md'));
 const tools = parseTools(read('tools.md'));
 const plays = parsePlays(read('plays.md'));
+const resources = parseResources(read('resources.md'));
 
 write('start.json', start);
 write('glossary.json', glossary);
@@ -162,5 +184,6 @@ write('benchmarks.json', benchmarks);
 write('advisor.json', advisor);
 write('tools.json', tools);
 write('plays.json', plays);
+write('resources.json', resources);
 
-console.log(`build-data: ${start.length} steps, ${glossary.length} terms, ${benchmarks.length} benchmarks, ${advisor.bands.length} advisor bands, ${tools.length} tools, ${plays.length} plays → public/data/`);
+console.log(`build-data: ${start.length} steps, ${glossary.length} terms, ${benchmarks.length} benchmarks, ${advisor.bands.length} advisor bands, ${tools.length} tools, ${plays.length} plays, ${resources.length} resources → public/data/`);
