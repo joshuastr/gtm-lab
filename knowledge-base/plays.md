@@ -269,3 +269,64 @@ Format (parsed by `app/scripts/build-data.mjs`): `## Area`, `### Play`, then `- 
 - step: Treat inventory and cash as first-class constraints.
 - detail: Unlike software, you pay for units before you sell them. Inventory, lead times, and cash conversion are GTM constraints, not finance afterthoughts.
 - source: DTC and hardware unit-economics practitioner guidance (Shopify, Predictable Designs)
+
+## Services and agencies
+### Niche down to win
+- when: You run or are starting a service business (agency, consultancy, freelance) and need to stand out. This is the single biggest GTM lever for services.
+- step: Pick a niche, by industry, outcome, or both.
+- detail: Generalists compete on price; specialists compete on expertise. Around 84% of agencies now position as specialists because a clear niche makes you the obvious choice for a specific buyer, and specialists charge 2 to 3x more for the same work.
+- step: Narrow until it feels uncomfortable.
+- detail: Most service founders niche too little. "We help SaaS companies with marketing" is still broad; "we run outbound for seed-stage fintech" is a niche you can own. The narrower you go, the easier the marketing and the higher the price.
+- step: Build everything around that niche.
+- detail: Your positioning, case studies, content, and outreach should all speak to the one buyer. A focused message to a narrow audience beats a generic message to everyone.
+- step: Expand only after you own the niche.
+- detail: Win and become known in one niche first, then widen. Trying to serve every kind of client from day one is why most service businesses stay invisible.
+- source: Agency niche-specialization data (AgencyAnalytics, Vendasta); Jordan Crawford (category of one)
+
+### Become the known expert (authority)
+- when: You need inbound demand and trust for a service, where the founder's reputation is effectively the product.
+- step: Publish where your buyer already pays attention.
+- detail: Pick one channel (LinkedIn, a newsletter, a podcast, YouTube) and show your expertise consistently. For services, content is not vanity; it is how a buyer decides you are the person to trust with their problem.
+- step: Teach your actual method, do not just post takes.
+- detail: Share the real frameworks and results you use. Giving away the "what" and "why" builds authority; clients still pay for the "done for you". It is the permissionless-value idea applied to content.
+- step: Use proof relentlessly.
+- detail: Case studies, specific results, and testimonials are the currency of service sales, because a buyer cannot try the service first. Make your wins concrete and visible.
+- step: Turn attention into a clear next step.
+- detail: Authority only converts if there is an obvious way to work with you. Pair the content with a simple offer or call to action, not just "DM me".
+- source: Service-business practitioner guidance; Nick Saraev and Jordan Crawford (build in public)
+
+### Systematize referrals
+- when: You have happy clients. Referrals are the single most effective acquisition channel for service businesses, so do not leave them to chance.
+- step: Treat referrals as a process, not luck.
+- detail: Referrals account for roughly a third of how clients find agencies, yet most firms never ask. Build asking for a referral into your delivery process, at the moments a client is happiest.
+- step: Make it easy to refer you.
+- detail: Give clients and partners a clear, one-line description of who you help and the result you deliver, so they can recognize and pass along a good fit without effort.
+- step: Build a partner and referral network.
+- detail: Complementary providers who serve the same buyer but do not compete are a steady referral source. Trade introductions and stay top of mind with them.
+- step: Reward and close the loop.
+- detail: Thank referrers, tell them what happened, and consider a referral incentive. A referrer who sees their intro valued refers again.
+- source: Agency referral data (AgencyAnalytics, Vendasta)
+
+### Productize and price for recurring revenue
+- when: Your service is custom and hourly, and you want predictable revenue and higher margins.
+- step: Productize your service into a repeatable offer.
+- detail: Package your method into a standardized offer with clear scope and a fixed price (around 44% of consultants now do this). It makes the offer easy to buy, easy to deliver, and far easier to market than bespoke project work.
+- step: Move from hourly to value-based or retainer pricing.
+- detail: Hourly billing caps your income at your time and punishes you for being fast. Retainers (commonly $1,500 to $15,000+ per month) give predictable recurring revenue, and value-based pricing ties your fee to the outcome. Both earn more than hourly.
+- step: Define scope tightly to prevent scope creep.
+- detail: A clear statement of work and firm scope boundaries protect your margin. Unmanaged scope creep is the quiet killer of service profitability.
+- step: Build recurring relationships, not one-off projects.
+- detail: A retainer or ongoing engagement is worth far more than a single project and smooths the feast-or-famine cycle. Design the offer so the natural next step is ongoing work.
+- source: Consulting Success, HBR, Agency Management Institute (productized services and retainer pricing)
+
+### Run a repeatable consultative sale
+- when: You sell a service through conversations, where the sale is the relationship and trust is earned, not clicked.
+- step: Qualify before you invest time.
+- detail: Define who is a good-fit client (budget, problem, urgency) and screen for it before a full discovery call. Chasing every lead is how service businesses burn out and underprice.
+- step: Run discovery as diagnosis, not a pitch.
+- detail: Ask questions to surface the real pain and its cost before proposing anything. The best service sellers talk far less than half the time and let the client arrive at the need. Pain is the pitch.
+- step: Standardize your proposal and scope.
+- detail: A repeatable proposal template (outcome, scope, price, timeline) speeds the sale and keeps your pricing and margins consistent across clients.
+- step: Sell the outcome and de-risk the decision.
+- detail: Buyers buy a service to remove a risk or a pain. Lead with the result and lower their perceived risk (a clear plan, proof, a small first engagement), because for a service the trust gap is the thing you are really closing.
+- source: Service-sales practitioner guidance; Jean Grosser (discovery, sell risk reduction)

@@ -124,3 +124,14 @@ descriptive/contested, not a law. Add terms as they come up; cite when you do.
 - **Demand response (DR)**: a utility program that pays to briefly reduce a device's electricity load during peak demand. For connected energy devices it turns a one-time sale into recurring, utility-funded revenue.
 - **BYOT (bring your own thermostat)**: a utility program letting a customer enroll a device they already own into demand response for credits.
 - **VPP (virtual power plant)**: many distributed devices (thermostats, batteries, EV chargers) coordinated to act like a power plant for the grid; a growing channel and revenue model for energy hardware.
+
+## Services and agencies
+- **Retainer**: a fixed recurring monthly fee for an agreed scope of service. The most common way service businesses turn project work into predictable recurring revenue.
+- **Productized service**: packaging a custom service into a standardized offer with fixed scope and price, so it is easy to buy, deliver, and market.
+- **Value-based pricing**: pricing a service by the outcome it delivers rather than the hours it takes. Generally earns more than hourly billing.
+- **Utilization**: the share of a team's available hours that are billable. A core profitability metric for any people-based service business.
+- **Niche / specialization**: focusing a service business on a specific industry, buyer, or outcome. The biggest lever for differentiation and pricing power in services.
+- **Referral**: a new client who comes through an existing client or partner recommending you. The most effective acquisition channel for service businesses.
+- **Scope creep**: work expanding beyond the agreed scope without extra pay. The quiet killer of service-business margins.
+- **Discovery call**: the first sales conversation, used to diagnose the buyer's real problem and qualify fit, not to pitch.
+- **SOW (statement of work)**: the document defining what a service engagement will and will not include, used to set scope, price, and expectations.

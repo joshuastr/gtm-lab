@@ -5,7 +5,7 @@ export function initStart(steps) {
     if (!el) return;
     el.innerHTML = `
         <div class="section-controls">
-            <p class="section-intro">The go-to-market motion from zero, in order. Each step: what it is, why it matters, and your first move. Work top to bottom; the deeper how-to for each lives in Plays. This path assumes a software or digital product. For a physical or hardware product the channels differ, so see the Hardware plays.</p>
+            <p class="section-intro">The go-to-market motion from zero, in order. Each step: what it is, why it matters, and your first move. Work top to bottom; the deeper how-to for each lives in Plays. This path assumes a software or digital product. For a physical or hardware product, or a service or agency business, the channels differ, so see the Hardware and the Services plays.</p>
         </div>
         <ol class="path">
             ${steps.map((s, i) => `
