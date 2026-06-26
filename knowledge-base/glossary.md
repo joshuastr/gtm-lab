@@ -111,3 +111,16 @@ descriptive/contested, not a law. Add terms as they come up; cite when you do.
 - **GTM orchestrator / agent**: a chain of skills (AI + tools + a feedback loop) that runs a GTM play end-to-end.
 - **The four-layer stack (Clay)**: Data Foundation → Orchestration → Execution → Agents; the data foundation
   gates everything. *(Clay, vendor.)*
+
+## Hardware and physical products
+- **DTC (direct-to-consumer)**: selling straight to the buyer through your own store, keeping the retail markup but paying the marketing and fulfillment costs yourself.
+- **Channel / distribution**: the path a physical product takes to the buyer (DTC, marketplace, distributor, retailer). Each channel adds reach but takes a margin cut.
+- **Marketplace**: a third-party storefront like Amazon where discovery is driven by reviews, ratings, ads, and search ranking, not outbound.
+- **Sell-in vs sell-through**: sell-in is getting product onto a retailer's shelf or into its warehouse; sell-through is the product actually being bought by end customers. Retailers drop products with weak sell-through.
+- **COGS (cost of goods sold)**: the direct cost to make and deliver a unit (materials, manufacturing, shipping). Hardware margin is whatever is left after COGS and channel cuts.
+- **Channel margin**: the cut a distributor or retailer takes, often 30 to 50% or more, which your pricing has to leave room for.
+- **Attach rate**: the share of hardware buyers who also take a subscription or service. Attaching recurring revenue is how hardware escapes a low one-time lifetime value.
+- **Omnichannel**: selling across DTC, marketplace, and retail at once, which partners and buyers increasingly expect.
+- **Demand response (DR)**: a utility program that pays to briefly reduce a device's electricity load during peak demand. For connected energy devices it turns a one-time sale into recurring, utility-funded revenue.
+- **BYOT (bring your own thermostat)**: a utility program letting a customer enroll a device they already own into demand response for credits.
+- **VPP (virtual power plant)**: many distributed devices (thermostats, batteries, EV chargers) coordinated to act like a power plant for the grid; a growing channel and revenue model for energy hardware.

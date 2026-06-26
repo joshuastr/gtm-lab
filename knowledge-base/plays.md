@@ -204,3 +204,68 @@ Format (parsed by `app/scripts/build-data.mjs`): `## Area`, `### Play`, then `- 
 - step: Decompose work to the smallest reusable unit, then build one agent or skill per unit.
 - step: Deploy, do not destroy: keep automation to net-new, read-only work and keep a human gate before anything sends or writes to a CRM.
 - source: Clay (four-layer stack); Jordan Crawford (deploy not destroy); Nick Saraev (skills as SOPs)
+
+## Hardware and physical products
+### Map your hardware channels
+- when: You sell a physical product. The channels are nothing like software outbound, so plan them deliberately.
+- step: Prove your unit economics in the cheapest channel first, usually your own DTC site.
+- detail: Opening retail or scaling ads before you know your true cost to acquire and fulfill a customer just multiplies losses. Prove contribution margin and a CAC payback under roughly 12 months in DTC before you expand.
+- step: Sequence the channels; do not open them all at once.
+- detail: The usual progression is your own website (DTC), then Amazon and marketplaces, then distributors and small retail, then big-box. Each adds reach but takes a margin cut and a different cost structure.
+- step: Price for each channel's margin from day one.
+- detail: Distributors and retailers take a cut (often 30 to 50% or more), so your price has to leave room for theirs without undercutting your own DTC. Inconsistent pricing across channels causes conflict and erodes margin, so set a channel pricing map before you sign anyone.
+- step: Decide where installation lives.
+- detail: If the product needs an electrician or installer (common for line-voltage or wired devices), the pro and distributor channel (electrical supply houses, contractor programs) becomes a real channel, not an afterthought.
+- step: Position as omnichannel even if one channel dominates.
+- detail: Retail buyers and partners prefer brands that sell across DTC, Amazon, and retail rather than Amazon-only sellers, even if Amazon is 80% of your volume.
+- source: DTC and retail-distribution practitioner guidance (Shopify, Clarkston, Predictable Designs)
+
+### Win on Amazon and retail
+- when: You sell consumer hardware through marketplaces and shelves, where discovery and trust are won very differently than in B2B.
+- step: Treat reviews and ratings as the conversion engine.
+- detail: For consumer hardware, star rating and review count are the single biggest driver of marketplace conversion. Seed early reviews legitimately, make support fast, and design the unboxing to prompt happy reviews.
+- step: Run marketplace ads and win the Buy Box.
+- detail: Amazon Sponsored Products plus a strong listing (title, images, A+ content, keywords) drive visibility. Owning the Buy Box and ranking for your category terms is most of the battle.
+- step: Measure sell-through, not just sell-in.
+- detail: Getting onto a shelf (sell-in) means nothing if the product does not move (sell-through). Retailers drop slow movers fast, so plan the demand generation that pulls product off the shelf.
+- step: Chase the reviews that move real volume.
+- detail: For many categories a Wirecutter or major-publication recommendation moves more units than any ad. Pitch reviewers, and make sure the product survives a rigorous test.
+- source: Hardware channel and retail practitioner guidance (Hardware Massive, Predictable Designs)
+
+### Kill the compatibility and installation friction
+- when: You sell a connected or installed device, where the buyer's first question is "will it even work in my home?"
+- step: Make compatibility the hero of your marketing.
+- detail: For devices like thermostats, compatibility (heating type, wiring, voltage) is the top reason a sale dies. Put a compatibility checker front and center so a buyer self-qualifies before they buy, which also cuts returns.
+- step: Pick a wedge the incumbents cannot serve.
+- detail: Owning a compatibility niche the big players ignore is a category-of-one play. The classic example is a thermostat built for electric or line-voltage heating, which the forced-air incumbents do not support.
+- step: Lower the install barrier or own the pro channel.
+- detail: Either make DIY install genuinely easy (clear guides, in-app setup) or build the installer channel (training, distributor shelves, contractor referrals) for buyers who need a pro.
+- step: Design onboarding to drive activation.
+- detail: The sale is not done at checkout. App setup, ecosystem pairing (Matter, Apple Home, Alexa, Google), and first value need to be smooth, because a frustrated setup becomes a return and a bad review.
+- source: Consumer connected-hardware practitioner guidance
+
+### Energy and connected devices: the utility channel
+- when: You sell an energy-relevant device (thermostat, EV charger, battery, water-heater control). This is often the highest-leverage channel and the one most founders underuse.
+- step: Understand why utilities will pay for your device.
+- detail: Utilities need to cut peak demand. A connected device that can shave load during peak events is a grid asset, so utilities subsidize the device and pay for the ongoing flexibility. That turns a one-time hardware sale into a subsidized purchase plus recurring revenue.
+- step: Get listed in rebate and demand-response programs.
+- detail: These programs pay real money: commonly $50 to $150 in upfront credits plus $25 to $75 per year for demand-response participation (small automatic temperature adjustments during peak events, with customer override). Getting your device approved and listed is a major channel in itself.
+- step: Pursue bring-your-own-thermostat (BYOT) and point-of-sale enrollment.
+- detail: BYOT lets a customer enroll a device they already own; point-of-sale instant rebates let the utility discount the device right at checkout. Both lower the price the customer sees and drive volume.
+- step: Reach utilities directly and through aggregators.
+- detail: You can partner with utilities one by one, or go through demand-response aggregators and DERMS platforms (for example Uplight or EnergyHub) that package many devices for many utilities. Aggregators get you scale faster.
+- step: Build the demand-response capability into the product and the business model.
+- detail: This only works if your device can reliably respond to grid signals and you can share the recurring revenue. Incumbents like ecobee run a whole utility business line on exactly this.
+- source: Utility rebate and demand-response programs (ecobee for utilities, SRP, Berkeley Electric, Ontario Home Renovation Savings); demand-response aggregator practice
+
+### Hardware unit economics: protect margin, attach recurring
+- when: Always, because hardware lives or dies on margin and a one-time purchase rarely funds growth alone.
+- step: Know your fully loaded COGS and per-channel margin.
+- detail: Cost of goods, shipping, returns, and warranty all eat margin, and every channel takes its own cut. Model the real contribution margin per channel, not the headline price.
+- step: Hold a CAC payback ceiling.
+- detail: Set a hard CAC payback period (ideally under 12 months) and do not scale paid acquisition past what contribution margin supports. Celebrating revenue while losing money on every unit is the classic hardware death.
+- step: Attach recurring revenue to a one-time sale.
+- detail: A pure one-time purchase gives you a low lifetime value. Attach a subscription, a service, or (for energy devices) demand-response revenue share, so each customer is worth far more than the device margin alone.
+- step: Treat inventory and cash as first-class constraints.
+- detail: Unlike software, you pay for units before you sell them. Inventory, lead times, and cash conversion are GTM constraints, not finance afterthoughts.
+- source: DTC and hardware unit-economics practitioner guidance (Shopify, Predictable Designs)
