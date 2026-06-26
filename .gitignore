@@ -1,0 +1,20 @@
+# Secrets
+.env
+.env.local
+*.key
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+.zed/
+
+# Tooling
+.venv/
+__pycache__/
+node_modules/
+
+# Local working data (keep raw contact/PII exports out of git)
+*.csv
+*.xlsx
+data/raw/
