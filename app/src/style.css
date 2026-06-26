@@ -1,0 +1,4 @@
+/* GTM Wizard entry stylesheet. Modular imports (matches the wizard-family convention). */
+@import './css/base.css';
+@import './css/layout.css';
+@import './css/components.css';

@@ -4,8 +4,8 @@ The cited grounding for the GTM Lab. The Wizard reads from here; every fact it t
 source listed below. This KB **grows as I work through the curriculum** — modules deepen as I learn them.
 
 ## What's here
-- **`glossary.md`** — the language: ~90 GTM terms, defined tightly, each with a source and a verification
-  flag (⚠ = treat as descriptive/contested, not a law).
+- **`glossary.md`** — the language: the core GTM vocabulary (~55 terms), defined tightly, each with a
+  source and a verification flag (⚠ = treat as descriptive/contested, not a law).
 - **`curriculum.md`** — the 9-module learning path: each module = a concept to learn + the source to ground
   it in + a runnable play + an explain-back checkpoint.
 - **`topics/`** — deeper per-topic syntheses (added as each module is worked; currently being populated).

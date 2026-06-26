@@ -29,3 +29,4 @@ for the map.
 ## Conventions
 Markdown. Skills under `skills/<name>/SKILL.md` (+ `README.md`). Knowledge under `knowledge-base/`.
 Keep this file lean; push depth into the KB and skill docs.
+**No em dashes** anywhere in the app, content, or docs (they read as AI-generated). Use commas, colons, or periods.

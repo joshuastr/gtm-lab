@@ -1,0 +1,19 @@
+{
+  "name": "gtm-wizard-app",
+  "version": "1.0.0",
+  "description": "Open-source, grounded GTM knowledge tool — advisor, glossary, and a verified benchmark library where every stat is labeled verified/descriptive/unverified.",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "dev": "npm run build:data && vite",
+    "build": "npm run build:data && vite build",
+    "preview": "vite preview",
+    "audit:lint": "eslint src/ scripts/"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-plugin-security": "^3.0.1",
+    "vite": "^6.2.2"
+  }
+}

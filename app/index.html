@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTM Wizard: Go-to-Market Knowledge</title>
+    <meta name="description"
+        content="An open-source go-to-market knowledge tool: an advisor, a glossary, and a benchmarks reference, drawn from cited sources." />
+    <meta name="author" content="Joshua Strub" />
+    <meta property="og:title" content="GTM Wizard" />
+    <meta property="og:description"
+        content="A go-to-market knowledge tool: advisor, glossary, and benchmarks, drawn from cited sources." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="header-inner content-width">
+            <div class="header-brand">
+                <span class="header-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent)">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 7v5l3 2" />
+                    </svg>
+                </span>
+                <div class="header-text">
+                    <span class="header-title">GTM Wizard</span>
+                    <span class="header-subtitle">Grounded Go-to-Market Knowledge</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="https://github.com/joshuastr/gtm-lab" target="_blank" rel="noopener noreferrer"
+                    class="header-github" aria-label="View on GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <span class="header-sep">·</span>
+                <a href="https://www.joshuastrub.com" target="_blank" rel="noopener noreferrer"
+                    class="header-author-link">Built by Joshua Strub</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="context-bar">
+        <div class="context-inner content-width">
+            <h1 class="context-title" id="contextTitle">Start Here</h1>
+            <p class="context-desc" id="contextDesc">The go-to-market motion from zero, in order. Each step:
+                what it is, why it matters, and your first move.</p>
+        </div>
+    </div>
+
+    <div class="tool-tabs-wrapper">
+        <nav class="tool-tabs content-width" role="tablist">
+            <button class="tool-tab active" data-tab="start" role="tab" aria-selected="true">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 21V4" />
+                    <path d="M4 4h12l-2 4 2 4H4" />
+                </svg>
+                <span class="tab-label">Start Here<span class="tab-desc">The path</span></span>
+            </button>
+            <button class="tool-tab" data-tab="advisor" role="tab" aria-selected="false">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor"
+                        stroke="none" />
+                </svg>
+                <span class="tab-label">Advisor<span class="tab-desc">Find your motion</span></span>
+            </button>
+            <button class="tool-tab" data-tab="knowledge" role="tab" aria-selected="false">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+                </svg>
+                <span class="tab-label">Glossary<span class="tab-desc">The language</span></span>
+            </button>
+            <button class="tool-tab" data-tab="plays" role="tab" aria-selected="false">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="9" y1="6" x2="20" y2="6" />
+                    <line x1="9" y1="12" x2="20" y2="12" />
+                    <line x1="9" y1="18" x2="20" y2="18" />
+                    <circle cx="4.5" cy="6" r="1.2" fill="currentColor" stroke="none" />
+                    <circle cx="4.5" cy="12" r="1.2" fill="currentColor" stroke="none" />
+                    <circle cx="4.5" cy="18" r="1.2" fill="currentColor" stroke="none" />
+                </svg>
+                <span class="tab-label">Plays<span class="tab-desc">Best practices</span></span>
+            </button>
+            <button class="tool-tab" data-tab="benchmarks" role="tab" aria-selected="false">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <line x1="4" y1="20" x2="4" y2="10" />
+                    <line x1="12" y1="20" x2="12" y2="4" />
+                    <line x1="20" y1="20" x2="20" y2="14" />
+                </svg>
+                <span class="tab-label">Benchmarks<span class="tab-desc">Stats &amp; sources</span></span>
+            </button>
+            <button class="tool-tab" data-tab="tools" role="tab" aria-selected="false">
+                <svg class="tab-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+                <span class="tab-label">Tools<span class="tab-desc">Stack &amp; landscape</span></span>
+            </button>
+        </nav>
+    </div>
+
+    <main class="main-content content-width">
+        <div id="startPanel" class="tab-panel active" role="tabpanel">
+            <div id="startContainer"></div>
+        </div>
+        <div id="advisorPanel" class="tab-panel" role="tabpanel">
+            <div id="advisorContainer"></div>
+        </div>
+        <div id="knowledgePanel" class="tab-panel" role="tabpanel">
+            <div id="knowledgeContainer"></div>
+        </div>
+        <div id="playsPanel" class="tab-panel" role="tabpanel">
+            <div id="playsContainer"></div>
+        </div>
+        <div id="benchmarksPanel" class="tab-panel" role="tabpanel">
+            <div id="benchmarksContainer"></div>
+        </div>
+        <div id="toolsPanel" class="tab-panel" role="tabpanel">
+            <div id="toolsContainer"></div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="footer-inner content-width">
+            <div class="footer-left">
+                <span class="footer-brand">GTM Wizard</span>
+                <span class="footer-sep">·</span>
+                <span class="footer-note">Free, open-source, grounded GTM knowledge</span>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.joshuastrub.com" target="_blank" rel="noopener noreferrer"
+                    class="footer-link footer-consulting">joshuastrub.com</a>
+                <span class="footer-sep">·</span>
+                <a href="https://github.com/joshuastr/gtm-lab" target="_blank" rel="noopener noreferrer"
+                    class="footer-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
