@@ -1,46 +1,46 @@
-/* ---------- Header ---------- */
+/* ---------- Header (dark nav band, matches renewables/datacenter wizards) ---------- */
 .app-header {
-    background: var(--bg-white);
-    border-bottom: 1px solid var(--border);
+    background: var(--nav-bg);
     position: sticky;
     top: 0;
     z-index: 30;
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .header-brand { display: flex; align-items: center; gap: 12px; }
-.header-icon {
-    width: 40px; height: 40px; border-radius: var(--radius-md);
-    background: var(--accent-light); display: grid; place-items: center;
-}
+.header-icon { display: flex; align-items: center; }
 .header-text { display: flex; flex-direction: column; line-height: 1.2; }
-.header-title { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; }
-.header-subtitle { font-size: 0.78rem; color: var(--ink-3); }
-.header-actions { display: flex; align-items: center; gap: 12px; color: var(--ink-3); }
-.header-github { color: var(--ink-3); display: grid; place-items: center; }
-.header-github:hover { color: var(--accent); }
-.header-sep { color: var(--ink-4); }
-.header-author-link { font-size: 0.85rem; color: var(--ink-2); font-weight: 500; }
+.header-title { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--nav-ink); letter-spacing: -0.02em; }
+.header-subtitle { font-size: 0.68rem; color: var(--nav-ink-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.header-actions { display: flex; align-items: center; gap: 12px; color: var(--nav-ink-dim); }
+.header-github { color: var(--nav-ink-dim); display: grid; place-items: center; }
+.header-github:hover { color: var(--nav-ink); }
+.header-sep { color: var(--nav-ink-dim); }
+.header-author-link { font-size: 0.85rem; color: var(--nav-ink-dim); font-weight: 500; }
+.header-author-link:hover { color: var(--nav-ink); }
 
-/* ---------- Context bar ---------- */
-.context-bar { background: var(--bg-white); border-bottom: 1px solid var(--border); }
-.context-inner { padding-top: 26px; padding-bottom: 26px; }
-.context-title { font-size: 1.6rem; font-weight: 700; }
-.context-desc { color: var(--ink-3); margin-top: 6px; max-width: 680px; font-size: 0.95rem; }
+/* ---------- Context bar (continues the dark band) ---------- */
+.context-bar { background: var(--nav-bg); }
+.context-inner { padding-top: 18px; padding-bottom: 16px; }
+.context-title { font-size: 22px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+.context-desc { color: rgba(255, 255, 255, 0.55); margin-top: 6px; max-width: 600px; font-size: 0.95rem; }
 
-/* ---------- Tabs ---------- */
+/* ---------- Tabs (pills on a white sub-bar) ---------- */
 .tool-tabs-wrapper { background: var(--bg-white); border-bottom: 1px solid var(--border); position: sticky; top: 64px; z-index: 20; }
-.tool-tabs { display: flex; gap: 4px; overflow-x: auto; }
+.tool-tabs { display: flex; gap: 4px; padding-top: 10px; padding-bottom: 10px; overflow-x: auto; scrollbar-width: none; }
+.tool-tabs::-webkit-scrollbar { display: none; }
 .tool-tab {
-    display: flex; align-items: center; gap: 9px; padding: 14px 16px;
-    background: none; border: none; border-bottom: 2px solid transparent;
+    display: flex; align-items: center; gap: 8px; padding: 8px 16px;
+    background: none; border: none; border-radius: var(--radius-sm);
     color: var(--ink-3); cursor: pointer; font-family: var(--font-body);
     white-space: nowrap; transition: var(--transition);
 }
-.tool-tab:hover { color: var(--ink); }
-.tool-tab.active { color: var(--accent); border-bottom-color: var(--accent); }
-.tab-icon { flex-shrink: 0; }
-.tab-label { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; font-weight: 600; font-size: 0.92rem; }
-.tab-desc { font-weight: 400; font-size: 0.72rem; color: var(--ink-4); }
+.tool-tab:hover { color: var(--ink); background: var(--bg-subtle); }
+.tool-tab.active { color: var(--accent-dark); background: var(--accent-light); }
+.tab-icon { flex-shrink: 0; opacity: 0.45; }
+.tool-tab.active .tab-icon { opacity: 0.9; color: var(--accent); }
+.tab-label { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; font-weight: 500; font-size: 0.85rem; }
+.tool-tab.active .tab-label { font-weight: 600; }
+.tab-desc { display: none; }
 
 /* ---------- Panels ---------- */
 .main-content { padding-top: 28px; min-height: 60vh; }
@@ -49,7 +49,7 @@
 @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 
 /* ---------- Footer ---------- */
-.app-footer { border-top: 1px solid var(--border); background: var(--bg-white); margin-top: 48px; }
+.app-footer { border-top: 1px solid var(--border); background: var(--bg-subtle); margin-top: 48px; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 22px; padding-bottom: 22px; font-size: 0.85rem; color: var(--ink-3); }
 .footer-brand { font-family: var(--font-heading); font-weight: 600; color: var(--ink-2); }
 .footer-sep { color: var(--ink-4); margin: 0 8px; }
@@ -57,7 +57,7 @@
 .footer-consulting { color: var(--accent); font-weight: 500; }
 
 @media (max-width: 640px) {
-    .header-subtitle, .tab-desc { display: none; }
+    .header-subtitle { display: none; }
     .context-title { font-size: 1.35rem; }
     .tool-tabs-wrapper { top: 64px; }
 }
